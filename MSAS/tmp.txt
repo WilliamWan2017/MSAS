@@ -1,0 +1,12 @@
+multiclass Decision Forest
+Multiclass Logistic Regression
+Two-Class Bayes Point Machine
+Two-Class Averaged Perceptron
+MultiClass Decision Jungle
+Two-Class Boosted Decision Tree
+Two-Class Support Vector Machine
+Two-Class Locally-Deep Support Vector Machine
+
+select Index,D_y,case when ScoredDecisionForest=1 then 1   when ScoredBayes=1 then 1 else 0 end prediction 
+from t1
+Index	D_y	ScoredDecisionForest	Index (2)	ScoredBayes	Index (3)	ScoredSVM	Index (2) (2)	scoredAveraged	Index (4)	Scored_Descion	Index (2) (3)	Scored Labels
